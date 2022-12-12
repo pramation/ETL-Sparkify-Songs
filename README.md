@@ -17,18 +17,18 @@ Project Repository files:
                  
                  
 ETL Process(etl.py): 
-      1. Spark reads data from s3 or local directory from following two sources
-           * song data from s3://udacity-dend/song_data or data/input_data/song_data
-           * log_data from s3://udacity-dend/log_data   or data/input_data/log_data
-      2. Process data with Spark
-             * transform the data and put it in the following corresponding spark dataframes
+      1. Spark reads data from s3 or local directory from following two sources  
+           * song data from s3://udacity-dend/song_data or data/input_data/song_data  
+           * log_data from s3://udacity-dend/log_data   or data/input_data/log_data  
+      2. Process data with Spark  
+             * transform the data and put it in the following corresponding spark dataframes  
              
                dimention table folders: users (stores user information), songs (stores song information), 
-                                   artists(stores artist information), time (stores time  details)
+                                   artists(stores artist information), time (stores time  details)  
                  Fact table folder :songplays 
-       3.  save the dataframes to correspoinding folders(table) as parquet files.
+       3.  save the dataframes to correspoinding folders(table) as parquet files.  
               
 
-How to run this project:
+How to run this project:  
 on terminal : 
-        1) python etl.py          #spark reads json files processes it and saves it into facts and dimension folders.
+        1) python etl.py          #spark reads json files processes it and saves it into facts and dimension folders. 
