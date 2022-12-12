@@ -27,7 +27,7 @@ ETL Process(etl.py):
              
              dimention table folders: users (stores user information), songs (stores song information), 
                                    artists(stores artist information), time (stores time  details)  
-                 Fact table folder :songplays 
+             Fact table folder :songplays 
                  
        3.  save the dataframes to correspoinding folders(table) as parquet files.  
               
