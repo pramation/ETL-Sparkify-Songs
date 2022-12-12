@@ -8,7 +8,8 @@ Project: Data Lake
      into appropriate fact and dimension tables and stores it back in s3
     
 
-Project Repository files: 
+Project Repository files:
+
     There are 2 files involved (dl.cfg,etl.py).
 
     dl.cfg  :- Config information file which is read by etl.py
@@ -17,15 +18,17 @@ Project Repository files:
                  
                  
 ETL Process(etl.py): 
+
       1. Spark reads data from s3 or local directory from following two sources  
            * song data from s3://udacity-dend/song_data or data/input_data/song_data  
            * log_data from s3://udacity-dend/log_data   or data/input_data/log_data  
       2. Process data with Spark  
-             * transform the data and put it in the following corresponding spark dataframes  
+           * transform the data and put it in the following corresponding spark dataframes  
              
-               dimention table folders: users (stores user information), songs (stores song information), 
+             dimention table folders: users (stores user information), songs (stores song information), 
                                    artists(stores artist information), time (stores time  details)  
                  Fact table folder :songplays 
+                 
        3.  save the dataframes to correspoinding folders(table) as parquet files.  
               
 
